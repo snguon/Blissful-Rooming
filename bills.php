@@ -1,12 +1,12 @@
 <?php
-include 'header.php';
-include 'nav.php';
+include 'lib/header.php';
+include 'lib/nav.php';
 ?>
 <article id="bills">
 
 </article>
 <?php
-include 'footer.php'
+include 'lib/footer.php'
 ?>
 </body>
 </html>
