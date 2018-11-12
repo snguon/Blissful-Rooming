@@ -1,2 +1,2 @@
-include 'header.php';
-include 'footer.php';
+include 'lib/header.php';
+include 'lib/footer.php';
