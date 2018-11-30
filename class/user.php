@@ -8,5 +8,5 @@ class user{
   function setName($newName){
     $userName = $newName;
   }
-  
+
 }
