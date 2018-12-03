@@ -10,13 +10,7 @@ include "lib/validation-functions.php";
         <meta charset="utf-8">
         <meta name="author" content="Connor Allan and Sam Nguon">
         <meta name="description" content="Rooming made easier">
-
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!--[if lt IE 9]>
-        <script src="//html5shim.googlecode.com/sin/trunk/html5.js"></script>
-        <![endif]-->
-
         <link rel="stylesheet" href="css/custom.css" type="text/css" media="screen">
 
         <?php
