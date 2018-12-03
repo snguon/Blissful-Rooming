@@ -4,11 +4,7 @@ session_unset();
 include "lib/constants.php";
 include "lib/validation-functions.php";
 include "lib/mailmessage.php";
-$debug = false;
-if (isset($_GET["debug"])) { // ONLY do this in a classroom environment
-    $debug = true;
-}
-if ($debug) {
+if (DEBUG) {
     echo '<pre>';
     print_r($_SESSION);
     echo '</pre>';
@@ -18,10 +14,10 @@ $email = htmlentities($_SESSION['email'], ENT_QUOTES, "UTF-8");
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Online Couponing</title>
+        <title>Blissful Rooming</title>
         <meta charset="utf-8">
-        <meta name="author" content="Connor Allan">
-        <meta name="description" content="Database for the UVM Registrar">
+        <meta name="author" content="Connor Allan and Sam Nguon">
+        <meta name="description" content="Rooming made easier">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,7 +35,7 @@ $email = htmlentities($_SESSION['email'], ENT_QUOTES, "UTF-8");
         //$user = htmlentities($_SERVER["REMOTE_USER"], ENT_QUOTES, "UTF-8");
         print "<!-- require Database.php -->";
 
-        require_once(BIN_PATH . '/Database.php');
+        // require_once(BIN_PATH . '/Database.php');
 
         // %^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
         //
@@ -85,7 +81,7 @@ $email = htmlentities($_SESSION['email'], ENT_QUOTES, "UTF-8");
             if ($pass == $Qpass) {
                 $_SESSION['email'] = $email;
                 $_SESSION['password'] = $pass;
-                header('Location: https://crallan.w3.uvm.edu/onlinecouponing/index.php');
+                header('Location: https://crallan.w3.uvm.edu/blissfulrooming/index.php');
             } else {
                 $errorPass = 'Your email or password may be incorrect';
             }
@@ -106,7 +102,7 @@ $email = htmlentities($_SESSION['email'], ENT_QUOTES, "UTF-8");
         $Qpass = $results[0]['fldpassword'];
         if ($pass == $Qpass) {
             $mailed = sendMail($email, $name);
-            header('Location: https://crallan.w3.uvm.edu/onlinecouponing/index.php');
+            header('Location: https://crallan.w3.uvm.edu/blissfulrooming/lib/index.php');
         }
     }
     if (isset($_POST['Sign-Up'])) {
