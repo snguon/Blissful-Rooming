@@ -11,7 +11,6 @@ Functions:
 -Messaging between everyone
 -Group grocery list
 -IOUs
--Integrate Venmo
 -Handle chore duties
 
 Goals:
