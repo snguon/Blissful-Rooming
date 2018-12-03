@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Tangerine');
 /* Page style */
-html, body {
+html {
+  background-color: #F1F1F1;
+}
+
+body {
   margin: 0 auto;
   background-color: #DEDBA7;
   color: #1A212C;
+  width: 90%;
 }
 
 /* Header style */
@@ -21,7 +26,7 @@ header h1 {
 
 header h4 {
   font-size: 30px;
-  margin: 5px;
+  margin: 0px 5px 0px 5px;
   padding-left: 10px;
 }
 
@@ -44,20 +49,30 @@ td {
 }
 
 /* Nav style */
+#nav {
+  background-color: #71B095;
+  width: 100%;
+}
 
-li {
-  float: left;
-  border: 2px solid black;
-  width: 14.07%;
-  border-collapse: collapse;
+#nav td {
+  font-size: 20px;
+  padding: 10px 0px 10px 0px;
   text-align: center;
+  width: 14.2%;
 }
 
-li a {
-  display: block;
+#nav td a {
+  text-decoration: none;
+  color: #1A212C;
 }
 
-/* Hover color: #71B095; */
+#nav td:hover {
+  background-color: #ADC1DC;
+}
+
+.activePage {
+  color: #ffffff;
+}
 
 /* Footer style */
 footer {
