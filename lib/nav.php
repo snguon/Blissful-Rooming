@@ -1,6 +1,6 @@
 <!-- ######################     Main Navigation   ########################## -->
-    <table>
-        <tr>
+    <table id="nav">
+        <tr id="nav_tr">
             <?php
             if ($PATH_PARTS['filename'] == "index") {
                 print '<td class="activePage">Dashboard</td>';
