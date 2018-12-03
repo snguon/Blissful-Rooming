@@ -1,5 +1,5 @@
 <?php
-define("DATABASE_NAME", 'CRALLAN_OnlineCoupons');
+define("DATABASE_NAME", 'CRALLAN_BlissfulRooming');
 
 define("ADMIN_EMAIL", "CRALLAN@uvm.edu");
 
