@@ -1,9 +1,9 @@
 <?php
 include 'lib/top.php';
 include 'lib/nav.php';
-$currentBills = array(array('Type' => 'Electricity','Cost' => 50,'Payer' => 'Bob'),array('Type' => 'Comcast','Cost' => 43,'Payer' => 'George'),array('Type' => 'Food','Cost' => 150,'Payer' => 'Alan'));
-$pendingBills = array(array('Type' => 'Pizza','Cost' => 50,'Payer' => 'Smitty'),array('Type' => 'Rent','Cost' => 650,'Payer' => 'George'),array('Type' => 'alcohol','Cost' => 150,'Payer' => 'George'));
-$previousBills = array(array('Type' => 'Electricity','Cost' => 50,'Payer' => 'Bob'),array('Type' => 'Comcast','Cost' => 43,'Payer' => 'George'),array('Type' => 'Food','Cost' => 150,'Payer' => 'Alan'));
+$currentBills = array(array('Type' => 'Electricity','Cost' => 50,'Payer' => 'Connor'),array('Type' => 'Comcast','Cost' => 43,'Payer' => 'Sam'),array('Type' => 'Food','Cost' => 150,'Payer' => 'Aaron'));
+$pendingBills = array(array('Type' => 'Pizza','Cost' => 50,'Payer' => 'Connor'),array('Type' => 'Rent','Cost' => 650,'Payer' => 'Sam'),array('Type' => 'alcohol','Cost' => 150,'Payer' => 'Sam'));
+$previousBills = array(array('Type' => 'Electricity','Cost' => 50,'Payer' => 'Connor'),array('Type' => 'Comcast','Cost' => 43,'Payer' => 'Sam'),array('Type' => 'Food','Cost' => 150,'Payer' => 'Aaron'));
 
 ?>
 <article id="bills">z
