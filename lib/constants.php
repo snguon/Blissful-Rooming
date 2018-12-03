@@ -13,7 +13,7 @@ if (!empty($_GET)) {
     $_GET = filter_input_array(INPUT_GET, FILTER_SANITIZE_STRING);
 }
 
-define("DEBUG", TRUE);
+define("DEBUG", FALSE);
 
 define ("SERVER", htmlentities($_SERVER['SERVER_NAME'], ENT_QUOTES, "UTF-8"));
 
