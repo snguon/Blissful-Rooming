@@ -1,43 +1,43 @@
 <!-- ######################     Main Navigation   ########################## -->
-    <nav>
-        <ul>
+    <table>
+        <tr>
             <?php
             if ($PATH_PARTS['filename'] == "index") {
-                print '<li class="activePage">Dashboard</li>';
+                print '<td class="activePage">Dashboard</td>';
             } else {
-                print '<li><a href="index.php">Dashboard</a></li>';
+                print '<td><a href="index.php">Dashboard</a></td>';
             }
             if ($PATH_PARTS['filename'] == "bills") {
-                print '<li class="activePage">Bills</li>';
+                print '<td class="activePage">Bills</td>';
             } else {
-                print '<li><a href="bills.php">Bills</a></li>';
+                print '<td><a href="bills.php">Bills</a></td>';
             }
             if ($PATH_PARTS['filename'] == "calendar") {
-                print '<li class="activePage">Calendar</li>';
+                print '<td class="activePage">Calendar</td>';
             } else {
-                print '<li><a href="calendar.php">Calendar</a></li>';
+                print '<td><a href="calendar.php">Calendar</a></td>';
             }
             if ($PATH_PARTS['filename'] == "messages") {
-                print '<li class="activePage">Messages</li>';
+                print '<td class="activePage">Messages</td>';
             } else {
-                print '<li><a href="messages.php">Messages</a></li>';
+                print '<td><a href="messages.php">Messages</a></td>';
             }
             if ($PATH_PARTS['filename'] == "groceryList") {
-                print '<li class="activePage">Grocery List</li>';
+                print '<td class="activePage">Grocery List</td>';
             } else {
-                print '<li><a href="groceryList.php">Grocery List</a></li>';
+                print '<td><a href="groceryList.php">Grocery List</a></td>';
             }
             if ($PATH_PARTS['filename'] == "chores") {
-                print '<li class="activePage">Chores</li>';
+                print '<td class="activePage">Chores</td>';
             } else {
-                print '<li><a href="chores.php">Chores</a></li>';
+                print '<td><a href="chores.php">Chores</a></td>';
             }
             if ($PATH_PARTS['filename'] == "ious") {
-                print '<li class="activePage">IOUs</li>';
+                print '<td class="activePage">IOUs</td>';
             } else {
-                print '<li><a href="ious.php">IOUs</a></li>';
+                print '<td><a href="ious.php">IOUs</a></td>';
             }
             ?>
-          </ul>
-        </nav>
+          </tr>
+        </table>
 <!-- #################### Ends Main Navigation    ########################## -->
