@@ -1,5 +1,80 @@
-img{
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+/* Page style */
+html {
+  background-color: #F1F1F1;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #DEDBA7;
+  color: #1A212C;
+  width: 90%;
+}
+
+/* Header style */
+header {
+  font-family: "Tangerine", serif;
+  background-color: #1D7872;
+  padding-left: 10px;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 80px;
+  margin: 10px;
+}
+
+header h4 {
+  font-size: 30px;
+  margin: 0px 5px 0px 5px;
+  padding-left: 10px;
+}
+
+img {
   border-radius: 1000em;
   width: 4em;
   height: auto;
+}
+
+article {
+  padding-left: 10px;
+}
+
+td {
+  text-align: left;
+}
+
+.active {
+  color: #D13F32;
+}
+
+/* Nav style */
+#nav {
+  background-color: #71B095;
+  width: 100%;
+}
+
+#nav td {
+  font-size: 20px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  width: 14.2%;
+}
+
+#nav td a {
+  text-decoration: none;
+  color: #1A212C;
+}
+
+#nav td:hover {
+  background-color: #ADC1DC;
+}
+
+.activePage {
+  color: #ffffff;
+}
+
+/* Footer style */
+footer {
+  text-align: center;
 }

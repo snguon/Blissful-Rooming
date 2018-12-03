@@ -6,7 +6,7 @@ $pendingBills = array(array('Type' => 'Pizza','Cost' => 50,'Payer' => 'Connor'),
 $previousBills = array(array('Type' => 'Electricity','Cost' => 50,'Payer' => 'Connor'),array('Type' => 'Comcast','Cost' => 43,'Payer' => 'Sam'),array('Type' => 'Food','Cost' => 150,'Payer' => 'Aaron'));
 
 ?>
-<article id="bills">z
+<article id="bills">
 <div class="currentBills">
 <?php
 print "<h3>Current Bills</h3><table>";
