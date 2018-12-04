@@ -64,6 +64,8 @@ td {
 #nav td a {
   text-decoration: none;
   color: #1A212C;
+  display: block;
+  width: 100%;
 }
 
 #nav td:hover {
