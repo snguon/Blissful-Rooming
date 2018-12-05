@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Tangerine');
 /* Page style */
 html {
-  background-color: #F1F1F1;
+  background-color: #D6D6D6;
 }
 
 body {
@@ -69,16 +69,25 @@ td {
 }
 
 #nav td:hover {
-  background-color: #ADC1DC;
+  background-color: #D6D6D6;
+}
+
+#nav .activePage:hover {
+  background-color: #71B095;
+}
+
+#nav td a:hover {
+  color: #0D56D9;
 }
 
 .activePage {
-  color: #ffffff;
+  color: #0D56D9;
 }
 
 /* Footer style */
 footer {
   text-align: center;
+  padding-bottom: 0.01%;
 }
 
 /* Calendar Style */
