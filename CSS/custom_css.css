@@ -64,6 +64,8 @@ td {
 #nav td a {
   text-decoration: none;
   color: #1A212C;
+  display: block;
+  width: 100%;
 }
 
 #nav td:hover {
@@ -92,6 +94,12 @@ footer {
   background-image: linear-gradient(#fff, #d3d3d3);
 }
 
+#calendar-container {
+  margin: 1%;
+  width: 48%;
+  height: 100%;
+}
+
 #calendar-container>div{
   padding: 0;
   margin-bottom: 10px;
@@ -102,5 +110,5 @@ footer {
 }
 
 #calendar-dates>table>tr>td{
-  padding: 5px;
+  padding: 1em 3em;
 }
