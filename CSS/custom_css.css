@@ -116,8 +116,15 @@ footer {
 
 #calendar-month-year{
   margin: 5px;
+  border-bottom: 0.5px solid black;
 }
 
-#calendar-dates>table>tr>td{
-  padding: 1em 3em;
+#calendar-dates>table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#calendar-dates>table>tr>td {
+  padding: 0.1% 5% 5% 0.1%;
+  border: 0.5px solid black;
 }
