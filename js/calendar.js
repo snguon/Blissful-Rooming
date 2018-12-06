@@ -18,6 +18,7 @@ window.onload = function(){
 }
 
 function get_calendar(day_no, days){
+  var todaysDate = new Date().getDate();
   var table = document.createElement('table');
   var tr = document.createElement('tr');
 
@@ -59,6 +60,9 @@ function get_calendar(day_no, days){
         return table;
       }
       var td = document.createElement('td');
+      if (count == todaysDate) {
+        td.className = 'today';
+      }
       td.innerHTML = count;
       count++;
       tr.appendChild(td);
