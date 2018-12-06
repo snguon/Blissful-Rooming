@@ -128,3 +128,8 @@ footer {
   padding: 0.1% 5% 5% 0.1%;
   border: 0.5px solid black;
 }
+
+.today:before {
+  content: ' \25CF';
+  color: #0D56D9;
+}
