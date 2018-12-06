@@ -129,7 +129,11 @@ footer {
   border: 0.5px solid black;
 }
 
-.today:before {
-  content: ' \25CF';
-  color: #0D56D9;
+.today b{
+  background-color: #0D56D9;
+  color: white;
+  height: 25px;width: 25px;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
 }
