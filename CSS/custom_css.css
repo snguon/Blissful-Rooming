@@ -129,6 +129,7 @@ footer {
   border: 0.5px solid black;
 }
 
-.today {
+.today:before {
+  content: ' \25CF';
   color: #0D56D9;
 }
