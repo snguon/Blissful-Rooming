@@ -16,11 +16,13 @@ $messages = array(
   <article id="message_wrapper">
     <div id="people_container">
       <table>
+        <tr id="personCard">
         <?php
         for($i = 0; $i <= 2; $i++){
-          print '<tr id="personCard"><td><img src="' . $users[$i]['Photo']. '" alt = "' . $user[$i]['Name'].' portait"></td><td> '. $users[$i]['Name'] .'</td></tr>';
+          print '<td><img src="' . $users[$i]['Photo']. '" alt = "' . $users[$i]['Name'].' portait"></td><td> '. $users[$i]['Name'] .'</td>';
         }
         ?>
+        </tr>
       </table>
     </div>
     <div id="messages_container">
