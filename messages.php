@@ -1,7 +1,10 @@
 <?php
 include 'lib/top.php';
 include 'lib/nav.php';
-$users = array(array('Name' => 'Connor', 'Photo'=> 'media/Connor.jpg'),array('Name' => 'Sam', 'Photo'=> 'media/Sam.jpg'),array('Name' => 'Aaron', 'Photo'=> 'media/Aaron.jpg'));
+$users = array(
+  array('Name' => 'Connor', 'Photo'=> 'media/Connor.jpg'),
+array('Name' => 'Sam', 'Photo'=> 'media/Sam.jpg'),
+array('Name' => 'Aaron', 'Photo'=> 'media/Aaron.jpg'));
 $messages = array(
   array('Name' => 'Connor', 'message'=> 'Hey I was thinking, the messages pages needs to be built.'),
   array('Name' => 'Sam', 'message'=> 'Hey do you have the money for the food I got yesterday?'),

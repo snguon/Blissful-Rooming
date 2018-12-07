@@ -1,6 +1,15 @@
 <?php
 include 'lib/top.php';
 include 'lib/nav.php';
+
+$sql = "SELECT DateTime, Description FROM Events WHERE HouseID =?";
+$data = 1;
+// $results = $thisDatabaseWriter->db->testSecurityQuery($sql, $data, 1, 0, 0);
+
+// echo'<pre>';
+// print_r($results);
+// echo'</pre>';
+
 $events = array(
   array('DateTime' => '12/7/18 1:10 PM', 'Description' => 'CS Fair'),
   array('DateTime' => '12/7/18 7:00 PM', 'Description' => 'Party'),
