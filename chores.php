@@ -1,7 +1,10 @@
 <?php
 include 'lib/top.php';
 include 'lib/nav.php';
-$currentChores = array(array('Chore' => 'Bathroom','Person' => 'Connor'),array('Chore' => 'Kitchen', 'Person' => 'Sam'),array('Chore' => 'Trash','Person' => 'Aaron'));
+$currentChores = array(
+  array('Chore' => 'Bathroom','Person' => 'Connor'),
+  array('Chore' => 'Kitchen', 'Person' => 'Sam'),
+  array('Chore' => 'Trash','Person' => 'Aaron'));
 ?>
 <article id="choreList">
   <div class="chores">
