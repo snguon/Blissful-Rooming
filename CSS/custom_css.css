@@ -90,6 +90,20 @@ footer {
   padding-bottom: 0.01%;
 }
 
+/* Dashboard Style */
+#dashboard h3 {
+  font-size: 20px;
+  text-decoration: underline;
+  height: 10px;
+}
+
+/* Bills Style */
+#bills h3 {
+  font-size: 20px;
+  text-decoration: underline;
+  height: 10px;
+}
+
 /* Calendar Style */
 #calendar-container{
   padding: 10px;
@@ -177,6 +191,13 @@ footer {
   border: 1px solid #71B095;
   border-radius: 100px / 75px;
   background-color: #71B095;
+}
+
+/* IOUs Style */
+#iousList h3 {
+  font-size: 20px;
+  text-decoration: underline;
+  height: 10px;
 }
 
 @media
