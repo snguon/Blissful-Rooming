@@ -198,6 +198,24 @@ footer {
   background-color: #71B095;
 }
 
+textarea {
+box-shadow: #001 0px 0px 5px inset;
+border: 1px none;
+width: 98%;
+height: 6em;
+margin:auto;
+margin-top:1em;
+text-align: center;
+}
+
+#messages_container input{
+  border: 1px solid black;
+margin: auto;
+    margin-top: auto;
+display: block;
+margin-top: .2em;
+}
+
 /* IOUs Style */
 #iousList h3 {
   font-size: 20px;
