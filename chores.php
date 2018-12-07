@@ -7,6 +7,7 @@ $currentChores = array(
   array('Chore' => 'Trash','Person' => 'Aaron'));
 ?>
 <article id="choreList">
+  <h3>Chore List</h3>
   <div class="chores">
     <form action="chores.php">
       <table>
