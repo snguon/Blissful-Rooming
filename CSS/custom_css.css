@@ -137,3 +137,110 @@ footer {
   display: block;
   text-align: center;
 }
+
+/* Messages */
+#people_container {
+  border-bottom: 5px solid black;
+  margin-right: 0.5%;
+}
+#people_container table {
+  width: 100%;
+}
+
+#people_container td {
+  width: 5%;
+}
+
+#messages_container img{
+  transform: scale(.75);
+}
+
+#messages_container table {
+  margin-top: 0.25%;
+}
+
+#messages_container tr:nth-child(odd) {
+  position: relative;
+}
+
+#messages_container tr:nth-child(even) {
+  position: relative;
+  left: 100%;
+}
+
+#messages_container td:nth-child(2) {
+  border: 1px solid #71B095;
+  border-radius: 100px / 75px;
+  background-color: #71B095;
+}
+
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+  #nav {
+		display: block;
+    padding-left: 35%;
+	}
+
+  #nav tr {
+		display: block;
+  }
+
+  #nav td {
+    display: block;
+    border: none;
+		position: relative;
+    width: unset;
+  }
+
+  #nav td:hover {
+    background-color: #71B095;
+  }
+
+  #calendar-container {
+    width: 90%;
+  }
+
+  #personCard img {
+    transform: scale(.75);
+  }
+
+  #messages_container img {
+    transform: scale(.50);
+  }
+
+  #messages_container tr:nth-child(even) {
+    left: 0%;
+  }
+
+  #messages_container td:nth-child(2) {
+    border-radius: unset;
+  }
+
+  #message_wrapper {
+    margin-right: 2%;
+  }
+
+  #personCard td {
+    display: block;
+    border: none;
+		position: relative;
+    width: 60%;
+    padding-left: 25%;
+    text-align: center;
+  }
+
+  header h1, h4 {
+    text-align: center;
+  }
+
+  header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10em;
+    width: unset;
+    height: 80px;
+}
+  }
+}
