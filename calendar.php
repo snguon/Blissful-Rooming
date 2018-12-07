@@ -18,6 +18,7 @@ $events = array(
   ?>
   <script type="text/javascript" src="js/calendar.js"></script>
   <body>
+    <article id ="calendarPage">
     <div id="calendar-container">
       <div id="calendar-header">
         <span id="calendar-month-year"></span>
@@ -25,7 +26,7 @@ $events = array(
       <div id="calendar-dates">
       </div>
     </div>
-    <article>
+    <div id="calender-events">
       <table><tr><thead><th>Description</th><th>Date</th></thead></tr><tbody>
         <?php
         for($i = 0; $i <= 3; $i++){
@@ -33,7 +34,8 @@ $events = array(
         }
         ?>
       </tbody></table>
-    </article>
+    </div>
+  </article>
   </body>
   <?php
   include 'lib/footer.php';

@@ -18,6 +18,11 @@ header {
   padding-left: 10px;
 }
 
+header a {
+  text-decoration: none;
+  color: #1A212C;
+}
+
 header h1 {
   display: inline-block;
   font-size: 80px;
@@ -90,6 +95,20 @@ footer {
   padding-bottom: 0.01%;
 }
 
+/* Dashboard Style */
+#dashboard h3 {
+  font-size: 20px;
+  text-decoration: underline;
+  height: 10px;
+}
+
+/* Bills Style */
+#bills h3 {
+  font-size: 20px;
+  text-decoration: underline;
+  height: 10px;
+}
+
 /* Calendar Style */
 #calendar-container{
   padding: 10px;
@@ -101,12 +120,11 @@ footer {
   font-size: 16px;
   font-family: Arial;
   background-image: linear-gradient(#fff, #d3d3d3);
-}
-
-#calendar-container {
   margin: 1%;
   width: 48%;
   height: 100%;
+  display: inline-block;
+  margin-top: unset;
 }
 
 #calendar-container>div{
@@ -136,6 +154,12 @@ footer {
   border-radius: 50%;
   display: block;
   text-align: center;
+}
+
+#calender-events {
+  width: 30%;
+  display: inline-block;
+  height: 2em;
 }
 
 /* Messages */
@@ -174,6 +198,13 @@ footer {
   background-color: #71B095;
 }
 
+/* IOUs Style */
+#iousList h3 {
+  font-size: 20px;
+  text-decoration: underline;
+  height: 10px;
+}
+
 @media
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
@@ -199,6 +230,13 @@ only screen and (max-width: 760px),
 
   #calendar-container {
     width: 90%;
+    display: block;
+  }
+
+  #calendar-events {
+    width: !00%;
+    display: block;
+    height: 100%;
   }
 
   #personCard img {
