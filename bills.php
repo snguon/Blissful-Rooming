@@ -46,7 +46,30 @@ for($i = 0; $i <= 2; $i++){
 print "</table>";
 ?>
 </div>
-
+<h3>Add Bills</h3>
+<form action="bills.php">
+  <table>
+    <thead>
+      <tr>
+        <th> Description</th>
+        <th>Cost</th>
+        <th>Payer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php
+      for($i = 0; $i <= 2; $i++){
+        print '<tr><td><input>'. [$i]['Description'] . '</td><td><input>' . [$i]['Cost'] . '</input></td><td><input>' . [$i]['Payer'] . '</input></td></tr>';
+      }
+      ?>
+      <tr>
+        <td>
+          <input type="submit" value="Submit">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
 </article>
 <?php
 include 'lib/footer.php'
