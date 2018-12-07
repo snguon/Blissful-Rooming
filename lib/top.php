@@ -44,6 +44,7 @@ include "lib/validation-functions.php";
 
 <!-- **********************     Body section      ********************** -->
 <?php
+$userName = 'Connor';
 $email = htmlentities($_SESSION['email'], ENT_QUOTES, "UTF-8");
 $pass = htmlentities($_SESSION['password'], ENT_QUOTES, "UTF-8");
 // $query = 'SELECT fldpassword FROM tblUsers WHERE pmkEmail= ?'; //Takes user's input for email to find matching password
