@@ -101,12 +101,11 @@ footer {
   font-size: 16px;
   font-family: Arial;
   background-image: linear-gradient(#fff, #d3d3d3);
-}
-
-#calendar-container {
   margin: 1%;
   width: 48%;
   height: 100%;
+  display: inline-block;
+  margin-top: unset;
 }
 
 #calendar-container>div{
@@ -136,6 +135,12 @@ footer {
   border-radius: 50%;
   display: block;
   text-align: center;
+}
+
+#calender-events {
+  /*! width: 30%; */
+  display: inline-block;
+  /*! height: 2em; */
 }
 
 /* Messages */
@@ -199,6 +204,13 @@ only screen and (max-width: 760px),
 
   #calendar-container {
     width: 90%;
+    display: block;
+  }
+
+  #calendar-events {
+    width: !00%;
+    display: block;
+    height: 100%;
   }
 
   #personCard img {
