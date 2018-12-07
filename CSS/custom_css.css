@@ -197,7 +197,14 @@ footer {
   border-radius: 100px / 75px;
   background-color: #71B095;
 }
-
+textarea{
+box-shadow: #001 0px 0px 5px inset;
+border: 1px none;
+width: 98%;
+height: 6em;
+margin:auto;
+text-align: center;
+}
 /* IOUs Style */
 #iousList h3 {
   font-size: 20px;

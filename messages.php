@@ -42,6 +42,10 @@ $messages = array(
           ?>
         </table>
       </div>
+      <form>
+        <textarea name="comment" placeholder="Enter message here"></textarea><br>
+  <input type="submit" value="Send Message">
+      </form>
     </article>
 
     <?php
