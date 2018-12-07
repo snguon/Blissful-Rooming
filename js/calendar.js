@@ -61,9 +61,13 @@ function get_calendar(day_no, days){
       }
       var td = document.createElement('td');
       if (count == todaysDate) {
+        var b = document.createElement('b');
         td.className = 'today';
+        b.innerHTML = count;
+        td.appendChild(b);
+      }else{
+        td.innerHTML = count;
       }
-      td.innerHTML = count;
       count++;
       tr.appendChild(td);
     }
