@@ -137,3 +137,39 @@ footer {
   display: block;
   text-align: center;
 }
+
+/* Messages */
+#people_container {
+  border-bottom: 5px solid black;
+  margin-right: 0.5%;
+}
+#people_container table {
+  width: 100%;
+}
+
+#people_container td {
+  width: 5%;
+}
+
+#messages_container img{
+  transform: scale(.75);
+}
+
+#messages_container table {
+  margin-top: 0.25%;
+}
+
+#messages_container tr:nth-child(odd) {
+  position: relative;
+}
+
+#messages_container tr:nth-child(even) {
+  position: relative;
+  left: 100%;
+}
+
+#messages_container td:nth-child(2) {
+  border: 1px solid #71B095;
+  border-radius: 100px / 75px;
+  background-color: #71B095;
+}
