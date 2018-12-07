@@ -17,11 +17,11 @@ $messages = array(
     <div id="people_container">
       <table>
         <tr id="personCard">
-        <?php
-        for($i = 0; $i <= 2; $i++){
-          print '<td><img src="' . $users[$i]['Photo']. '" alt = "' . $users[$i]['Name'].' portait"></td><td> '. $users[$i]['Name'] .'</td>';
-        }
-        ?>
+          <?php
+          for($i = 0; $i <= 2; $i++){
+            print '<td><img src="' . $users[$i]['Photo']. '" alt = "' . $users[$i]['Name'].' portait"></td><td> '. $users[$i]['Name'] .'</td>';
+          }
+          ?>
         </tr>
       </table>
     </div>
@@ -29,12 +29,17 @@ $messages = array(
       <table>
         <?php
         for($i = 0; $i <= 6; $i++){
-          print '<tr><td><img src="media/' . $messages[$i]['Name']. '.jpg" alt = "' . $messages[$i]['Name'].'"></td><td>' . $messages[$i]['message'] . '</td></tr>';
-        }
-        ?>
-      </table>
-    </div>
-  </article>
+          if($userName == $messages[$i]['Name']){
+            print '<tr class="currentUser"><td><img src="media/' . $messages[$i]['Name']. '.jpg" alt = "' . $messages[$i]['Name'].'"></td><td>' . $messages[$i]['message'] . '</td></tr>';
+          } else {
+            print '<tr><td><img src="media/' . $messages[$i]['Name']. '.jpg" alt = "' . $messages[$i]['Name'].'"></td><td>' . $messages[$i]['message'] . '</td></tr>';
 
-  <?php
-  include 'lib/footer.php';
+          }
+        }
+          ?>
+        </table>
+      </div>
+    </article>
+
+    <?php
+    include 'lib/footer.php';
