@@ -7,7 +7,6 @@ $ious = array(
   array('Requested' => 'Aaron','Payer' => 'Connor','Reason' => 'Booze', 'Amount' => 40));
 ?>
 <article id="iousList">
-  <h3>IOUs List</h3>
   <div class="ious">
     <?php
     print '<h3>IOUs List</h3><table>';
