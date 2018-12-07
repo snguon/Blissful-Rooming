@@ -14,32 +14,15 @@ include "lib/validation-functions.php";
   <link rel="stylesheet" href="CSS/custom_css.css" type="text/css" media="screen">
 
   <?php
-  // %^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
-  //
-  // inlcude all libraries.
-  // %^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
-  //$user = htmlentities($_SERVER["REMOTE_USER"], ENT_QUOTES, "UTF-8");
-  print "<!-- require Database.php -->";
+  // PATH SETUP
 
-  require_once(BIN_PATH . '/Database.php');
+  $yourURL = DOMAIN . PHP_SELF;
+  print '<!-- begin including libraries -->';
 
-  // %^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
-  //
-  // Set up database connection
-  //
-  // generally you dont need the admin on the web
+  include LIB_PATH . '/Connect-With-Database.php';
 
-  print "<!-- make Database connections -->";
-  $dbUserName = 'crallan_reader';
-  $whichPass = "r"; //flag for which one to use.
-  $dbName = DATABASE_NAME;
-
-  $thisDatabaseReader = new Database($dbUserName, $whichPass, $dbName);
-
-  $dbUserName = 'crallan_writer';
-  $whichPass = "w";
-  $thisDatabaseWriter = new Database($dbUserName, $whichPass, $dbName);
-  ?>
+  print '<!-- libraries complete-->';
+?>
 </head>
 
 <!-- **********************     Body section      ********************** -->
@@ -64,8 +47,9 @@ if (DEBUG) {
 }
 print '<body id="' . $PATH_PARTS['filename'] . '">';
 ?>
-<header id=header>
+<header id=header><a href="/blissfulrooming">
 <img src="media/980x.jpg" alt="Blissful Rooming Logo">
 <h1>Blissful Rooming</h1>
 <h4>Rooming made easier</h4>
+</a>
 </header>
